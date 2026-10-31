@@ -1,0 +1,6 @@
+{
+  "name": "Whole Human Framework + MindHack",
+  "description": "Reprogram Your Mind. Transform Your Life. A 12-week transformational experience to release limitations and heal deep patterns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
