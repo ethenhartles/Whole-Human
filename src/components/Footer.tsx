@@ -6,13 +6,13 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onApplyClick }) => {
   return (
-    <footer className="w-full bg-[#12101d] text-white pt-16 pb-12 border-t border-white/10">
+    <footer className="w-full bg-[#12101d] text-white pt-14 pb-12 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/10">
           
-          {/* Brand Column */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-3.5 mb-5">
+          {/* Brand Lockup & Description */}
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3.5 mb-4">
               <div className="w-9 h-9 relative flex-shrink-0">
                 <svg
                   viewBox="0 0 48 48"
@@ -55,79 +55,17 @@ export const Footer: React.FC<FooterProps> = ({ onApplyClick }) => {
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-white/60 leading-relaxed max-w-sm mb-6">
+            <p className="text-xs sm:text-sm text-white/60 leading-relaxed">
               A 12-week transformational experience to release limitations, heal deep patterns, and create extraordinary results in every area of your life.
             </p>
-
-            <button
-              onClick={onApplyClick}
-              className="bg-[#6155EA] hover:bg-[#5244DC] text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition-all shadow-md shadow-[#6155ea]/25 cursor-pointer"
-            >
-              Apply for Next Cohort
-            </button>
           </div>
 
-          {/* Navigation Links */}
-          <div>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">
-              Navigation
-            </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-white/70">
-              <li>
-                <a href="#framework" className="hover:text-white transition-colors">
-                  The Framework
-                </a>
-              </li>
-              <li>
-                <a href="#program-details" className="hover:text-white transition-colors">
-                  Program Details
-                </a>
-              </li>
-              <li>
-                <a href="#results" className="hover:text-white transition-colors">
-                  Client Results
-                </a>
-              </li>
-              <li>
-                <a href="#about-david" className="hover:text-white transition-colors">
-                  About David
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-white transition-colors">
-                  Frequently Asked Questions
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Core Protocols */}
-          <div>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">
-              Core Protocols
-            </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-white/70">
-              <li>MindHack Theta Imprinting</li>
-              <li>Somatic Vagus Nerve Reset</li>
-              <li>Upper-Limit Dissolution</li>
-              <li>Daily 30-Min Audio Ritual</li>
-              <li>Executive Sovereign Alignment</li>
-            </ul>
-          </div>
-
-          {/* Legal & Trust */}
-          <div>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">
-              Trust & Guarantee
-            </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-white/70">
-              <li>30-Day Breakthrough Guarantee</li>
-              <li>233+ Verified 5-Star Reviews</li>
-              <li>Strict 25-Student Cohort Cap</li>
-              <li>Confidential Client Chambers</li>
-              <li>Terms of Service & Privacy</li>
-            </ul>
-          </div>
+          <button
+            onClick={onApplyClick}
+            className="bg-[#6155EA] hover:bg-[#5244DC] text-white text-xs sm:text-sm font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-[#6155ea]/25 cursor-pointer flex-shrink-0"
+          >
+            Apply for Next Cohort
+          </button>
 
         </div>
 
